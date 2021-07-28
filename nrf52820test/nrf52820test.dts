@@ -2,8 +2,8 @@
 #include <nordic/nrf52820_qdaa.dtsi>
 
 / {
-	model = "nRF52820test";
-	compatible = "nrf52820test";
+  model = "nRF52820test";
+  compatible = "nrf52820test";
 
   chosen {
     zephyr,sram = &sram0;
@@ -11,17 +11,17 @@
     zephyr,flash-controller = &flash_controller;
   };
 
-	leds {
-		compatible = "gpio-leds";
-		led0: led0 {
-			gpios = <&gpio0 30 0>;
-			label = "Test GPIO";
-		};
+  leds {
+	compatible = "gpio-leds";
+	led0: led0 {
+		gpios = <&gpio0 30 0>;
+		label = "Test GPIO";
 	};
+   };
 
-	aliases {
-		led0 = &led0;
-	};
+   aliases {
+	led0 = &led0;
+   };
 
 };
 
