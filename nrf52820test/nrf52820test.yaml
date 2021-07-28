@@ -1,0 +1,12 @@
+identifier: nRF52820test
+name: nRF52820test
+type: mcu
+arch: arm
+toolchain:
+  - zephyr
+  - gnuarmemb
+  - xtools
+ram: 32
+flash: 256
+supported:
+  - gpio

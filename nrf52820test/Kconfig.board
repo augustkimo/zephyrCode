@@ -1,0 +1,5 @@
+# nRF52820test board configuration
+
+config BOARD_NRF52820test
+	bool "nRF52820test"
+	depends on SOC_NRF52820_QDAA

@@ -1,0 +1,16 @@
+/dts-v1/;
+#include <nordic/nrf52820_qdaa.dtsi>
+
+/ {
+	model = "nRF52820test";
+	compatible = "nrf52820test";
+
+  chosen {
+    zephyr,sram = &sram0;
+    zephyr,flash = &flash0;
+    zephyr,flash-controller = &flash_controller;
+    zephyr,gpio0 = &gpio0;
+    zephyr,gpiote = &gpiote;
+    zephyr,clock = &clock;
+  };
+};

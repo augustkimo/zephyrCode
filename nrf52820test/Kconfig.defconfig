@@ -1,0 +1,9 @@
+# nRF52820test board configuration
+
+
+if BOARD_NRF52820test
+
+config BOARD
+	default "nrf52820test"
+
+endif # BOARD_NRF52820test
